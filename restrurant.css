@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height:59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    
+}
+/* navigationbar logo and imag */
+#logo{
+    margin: 10px 34px;
+    height: 25px;
+}
+#logo img{
+    margin: 3px 5px;
+    height: 25px;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: opx;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+/* navbar list */
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: cornsilk;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: #fff;
+  
+  
+}
+
+/* sectiondesigning */
+#home
+{
+    
+    display: flex;
+    flex-direction: column;
+    padding:3px 150px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+#home::before{
+    content:"";
+    background:url(img2.png)no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: opx;
+    height: 430px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+
+}
+#home h1{
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 2.8rem;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+}
+#home p{
+    color: black;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Chelsea Market', cursive;
+}
+.btn{
+    padding: 5px;
+    margin: 20px;
+    background-color: grey;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Chelsea Market', cursive;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+/* sectioncss */
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services{}
+.h-primary{
+    margin: 10px;
+    font-size: 2.5rem;
+    padding: 30px;
+    /* background-color: hotpink; */
+    font-family: 'Chelsea Market', cursive;
+}
+/* utility classes */
+
+.h-secondry{
+    font-size: 1.5rem;
+    padding: 8px;
+    font-family: 'Chelsea Market', cursive;
+}
+.center{
+    text-align: center;
+}
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{
+    margin: 5px 20px;
+    /* border:2px solid yellow; */
+    border-radius: 10px;
+    background-color: rgb(219, 214, 214);
+    padding: 15px;
+}
+#clients{
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+ 
+    padding: 35px;
+    
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+background: url('../smile.jpg');
+height: 54%;
+width: 100%;
+z-index: -1;
+opacity: 0.6;
+}
+#client-section{
+   margin-top: 40px;
+}
+
+/* contact section  */
+footer{
+    background-color: black;
+    color: blanchedalmond;
+    margin-bottom: 0px;
+}
+#contact{
+    position: relative;
+    
+}
+#contact::before
+{
+    content: "";
+    position: absolute;
+    height: 96%;
+    margin-top: 40px;
+ margin-bottom: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    
+}
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:34px;
+        }
+        #contact-box input,
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+        #contact-box form{
+            width: 50%;
+        }
+        #contact-box label{
+       font-size: 1.5rem;
+        }
